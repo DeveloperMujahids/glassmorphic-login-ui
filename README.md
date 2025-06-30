@@ -1,6 +1,3 @@
-# glassmorphic-login-ui
-A clean, animated login screen built with HTML5 and CSS3 using glassmorphism, smooth transitions, modern fonts, and a professional layout. Fully responsive and easily customizable.
-
 # Glassmorphic Login UI
 
 A modern, responsive, and animated login screen UI built using **HTML5** and **CSS3** with **glassmorphism** design, **Inter font**, and **professional styling**.
