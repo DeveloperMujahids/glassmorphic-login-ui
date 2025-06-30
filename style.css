@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: 'Inter', sans-serif;
+  background: url('https://www.chromethemer.com/download/hd-wallpapers/blue-sky-3840x2160.jpg') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+}
+
+.login-box {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  animation: fadeIn 1s ease-in-out;
+}
+
+h2 {
+  text-align: center;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 20px;
+  border: 2px solid #000;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  color: black;
+  outline: none;
+  transition: 0.3s;
+}
+
+.input-group input:focus {
+  border-color: #00d9ff;
+  background: white;
+}
+
+.input-group label {
+  position: absolute;
+  left: 20px;
+  top: 12px;
+  color: #333;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+.input-group input:focus ~ label,
+.input-group input:valid ~ label {
+  top: -14px;
+  left: 15px;
+  font-size: 13px;
+  color: #00d9ff;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 0 5px;
+  border-radius: 10px;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: rgb(14, 3, 41);
+}
+
+.options a {
+  color: #080130;
+  text-decoration: none;
+}
+
+.options a:hover {
+  text-decoration: underline;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background: #00d9ff;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 4px 12px rgba(0, 217, 255, 0.4);
+}
+
+.login-btn:hover {
+  background: #00d9ff;
+  transform: scale(1.03);
+}
+
+.register-link {
+  margin-top: 25px;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+}
+
+.register-link a {
+  color: #01242a;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
